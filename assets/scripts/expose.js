@@ -8,7 +8,7 @@ function init() {
     const hornSelect = document.getElementById('horn-select');
     const hornImage = document.querySelector('#expose img');
     const hornAudio = document.querySelector('#expose audio');
-    
+
     const playSoundButton = document.querySelector('#expose button'); 
     const volumeSlider = document.getElementById('volume');
     const volumeIcon = document.querySelector('#volume-controls img');
@@ -24,7 +24,7 @@ function init() {
     });
 
     // event listener for the "Play Sound" button
-    playButton.addEventListener('click', function() {
+    playSoundButton.addEventListener('click', function() {
       playSound();
     });
 
@@ -70,9 +70,9 @@ function init() {
       hornAudio.volume = volumeLevel / 100;
     }
 
-    //sound and confetti deoesnt work on chrome and safari, once finished publish (explore.html??) to 
-    //githhub pages
+    //sound and confetti deoesnt work on chrome and safari
 
+    //and shoot confetti only when the party horn is selected and play sound button is clicked
     function playSound() {
       // Play audio when button is clicked
       hornAudio.play();
