@@ -13,6 +13,8 @@ function init() {
     const volumeSlider = document.getElementById('volume');
     const volumeIcon = document.querySelector('#volume-controls img');
 
+    const jsConfetti = new JSConfetti();
+
     // event listener for the horn select dropdown
     hornSelect.addEventListener('change', function() {
       updateHorn();
@@ -70,9 +72,7 @@ function init() {
       hornAudio.volume = volumeLevel / 100;
     }
 
-    //sound and confetti deoesnt work on chrome and safari
 
-    //and shoot confetti only when the party horn is selected and play sound button is clicked
     function playSound() {
       // Play audio when button is clicked
       hornAudio.play();
