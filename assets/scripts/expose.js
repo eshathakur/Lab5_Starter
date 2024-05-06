@@ -69,7 +69,9 @@ function init() {
       hornAudio.volume = volumeLevel / 100;
     }
 
-    //sound and confetti deoesnt work
+    //sound and confetti deoesnt work, once finished publish (explore.html??) to 
+    //githhub pages
+
     function playSound() {
       // Play audio when button is clicked
       hornAudio.play();
