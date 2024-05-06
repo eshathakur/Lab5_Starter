@@ -65,11 +65,15 @@ function init() {
     // Set selected voice
     utterance.voice = selectedVoiceObject;
 
-    //audio works on chrome not safari
+    // Add event listeners for speech start and end
+    utterance.addEventListener('start', handleSynthesisStart);
+    utterance.addEventListener('end', handleSynthesisEnd);
+
+    //audio works on chrome not safari!
     speechSynthesis.speak(utterance);
 
     function handleSynthesisStart() {
-      faceImage.src = 'assets/images/open-mouthed.png';
+      faceImage.src = 'assets/images/smiling-open.png';
     }
 
     function handleSynthesisEnd() {
@@ -77,8 +81,8 @@ function init() {
       faceImage.src = 'assets/images/smiling.png';
 
       // Remove event listeners after speech ends
-      speechSynthesis.removeEventListener('start', handleSynthesisStart);
-      speechSynthesis.removeEventListener('end', handleSynthesisEnd);
+      utterance.removeEventListener('start', handleSynthesisStart);
+      utterance.removeEventListener('end', handleSynthesisEnd);
     }
 
 

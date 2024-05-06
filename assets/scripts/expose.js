@@ -4,11 +4,12 @@ window.addEventListener('DOMContentLoaded', init);
 
 function init() {
   // TODO
-    // references to HTML elements
+    // references to HTML elements, use query selector for button
     const hornSelect = document.getElementById('horn-select');
     const hornImage = document.querySelector('#expose img');
     const hornAudio = document.querySelector('#expose audio');
-
+    
+    const playSoundButton = document.querySelector('#expose button'); 
     const volumeSlider = document.getElementById('volume');
     const volumeIcon = document.querySelector('#volume-controls img');
 
