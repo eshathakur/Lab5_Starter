@@ -2,6 +2,7 @@
 Esha Thakur
 https://eshathakur.github.io/Lab5_Starter/expose.html
 https://eshathakur.github.io/Lab5_Starter/explore.html
+(for explore audio works on chrome not safari (asked Jonathan Yin during tutor hours and he said this is okay))
 
 1) I dont think I would use a unit test to test the "message" feature of a messaging
 application because this woukd require another user to see if they recieved the message.

@@ -69,7 +69,7 @@ function init() {
     utterance.addEventListener('start', handleSynthesisStart);
     utterance.addEventListener('end', handleSynthesisEnd);
 
-    //audio works on chrome not safari!
+    //audio works on chrome not safari (asked Jonathan Yin during tutor hours and he said this is okay)
     speechSynthesis.speak(utterance);
 
     function handleSynthesisStart() {
